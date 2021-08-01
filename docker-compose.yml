@@ -1,0 +1,10 @@
+version: '3'
+services:
+  amazonlinux:
+    container_name: mydev
+    build: 
+      context: .
+    command: /bin/bash
+    tty: true
+    volumes:
+      - ./tmp:/var/tmp
